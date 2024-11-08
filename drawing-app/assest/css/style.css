@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#app{
+    height: 100vh;
+}
+
+.content{
+    margin-top: 20px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool{
+    background: steelblue;
+    display: flex;
+    align-items: center;
+}
+
+.tool > *{
+    height: 40px;
+    width: 40px;
+    background: #ececec;
+    margin: 5px;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#save{
+    margin-left: auto;
+    text-decoration: none;
+    color: #000;
+}
+
+canvas{
+    border: 2px solid #000;
+    margin: 0 auto;
+}

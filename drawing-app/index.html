@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assest/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/xq-light.css">
+    <link rel="stylesheet" href="chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/dracula.css">
+    <link rel="stylesheet" href="chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/codemirror.css">
+    <title>Drawing App</title> 
+</head>
+<body>
+    <div id="app">
+        <div class="tool">
+            <input id="color" type="color">
+            <button id="eraser">
+                <i class='bx bxs-eraser' ></i>
+            </button>
+            <button id="decrease">
+                -
+            </button>
+            <span id="size">
+                20
+            </span>
+            <button id="increase">
+                +
+            </button>
+            <a id="save" download="tenfile.png">
+                <i class='bx bxs-save' ></i>
+            </a>
+            <button id="clear">
+                <i class='bx bx-window-close' ></i>
+            </button>
+        </div>
+        <div class="content">
+            <canvas width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="./assest/js/app.js"></script>
+</body>
+</html>

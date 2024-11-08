@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+<body>
+    <div class="search-container">
+        <h2>Search</h2>
+        <div class="search-fields">
+            <select id="room-type">
+                <!-- <option value="">Loại Phòng</option>
+                <option value="single">Phòng Đơn</option>
+                <option value="double">Phòng Đôi</option>
+                <option value="suite">Suite</option> -->
+            </select>
+            <input type="text" id="room-name" placeholder="Tên Phòng">
+            <select id="room-status">
+                <option value="">Trạng Thái</option>
+                <option value="available">Có Sẵn</option>
+                <option value="booked">Đã Đặt</option>
+                <option value="occupied">Đang Ở</option>
+            </select>
+            <button onclick="search()">Tìm kiếm</button>
+        </div>
+    </div>
+
+    <div class="results-container">
+        <div class="room-card">
+            <img src="room1.jpg" alt="Room 1">
+            <h3>Tên Phòng: Room 1</h3>
+            <p>Loại Phòng: Phòng Đơn</p>
+            <p>Trạng Thái: Có Sẵn</p>
+        </div>
+        <!-- More room cards can be added here dynamically -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+ integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/search.js"></script>
+</body>
+</html>

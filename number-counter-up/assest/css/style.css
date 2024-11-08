@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+
+#app{
+    height: 100vh;
+    background: #8a66b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter{
+    padding: 20px 40px;
+    font-size: 40px;
+    background: #6b38b6;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 20px;
+}
+
+.counter h1{
+    font-size: 18px;
+    margin-bottom: 15px;
+}

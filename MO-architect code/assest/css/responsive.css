@@ -1,0 +1,33 @@
+/* mobile and tablet */
+
+@media (max-width: 1023px) {
+    
+   
+}
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px){
+   .m-6{
+    max-width: 47.5%;
+   }
+}
+
+/* mobile */
+
+@media (max-width: 739px){
+    .menu{
+        display: none;
+    }
+    .trademark{
+        float: left;
+    }
+}
+
+/* PC */
+
+@media (min-width: 1024px){
+    .l-3{
+        max-width: 24.17%;
+    }
+}

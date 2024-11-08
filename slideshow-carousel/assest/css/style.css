@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+#app{
+    height: 100vh;
+    background: #dadada;
+}
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+    height: 80%;
+}
+
+.main{
+    height: 80%;
+    margin-bottom: 20px;    
+    position: relative;
+    overflow: hidden;
+}
+
+.img-feature{
+    transition: 1s;
+    /* animation: slideLeft 1s ease-in-out forwards; */
+}
+
+.control{
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translateY(-50%);
+}
+
+.prev{
+    left: 10px;
+    cursor: pointer;
+}
+
+.next{
+    right: 10px;
+    cursor: pointer;
+}
+
+.list-image{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-image .picture:hover{
+    cursor: pointer;
+    background: rgb(220, 86, 86);
+    flex: 1.5;
+}
+
+.list-image .picture{
+    flex: 1;
+    padding: 5px;
+    transition: 0.4s;
+}
+
+.list-image img, .img-feature{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.active{
+    background: rgb(220, 86, 86);
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}

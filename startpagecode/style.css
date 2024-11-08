@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    position: relative;
+}
+
+.bignavbar{
+    width: 100%;
+    height: 500px;
+    background: #f44336;
+    
+}
+
+.smallnavbar{
+    z-index: 1;
+    width: 100%;
+    height: 55px;
+    background: #f44336!important;
+    box-shadow: 5px 3px black;
+    position: fixed;
+    top:0;
+}
+
+ul{
+    float: left;
+    display: flex;
+    position: absolute;
+}
+
+ul li{
+    margin-top: 18px;
+    list-style: none;
+    font-size: 18px;
+}
+
+ul li a{
+    padding: 17px 24px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: 100;
+    border-radius: 8px;
+    transition: 0.8s ease;
+}
+
+ul li a:hover{
+    background: #fff!important;
+    color: #333!important;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 65px;
+    font-weight: inherit;
+    font-family:"Montserrat", sans-serif;
+    position: absolute;
+    top : 120px;
+    left: 35%;
+}
+
+.content .h2{
+    padding-top: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: inherit;
+    font-family:"Montserrat", sans-serif;
+    position: absolute;
+    top: 200px;
+    left: 43%;
+}
+
+.btn{
+    background: black;
+    color: #fff;
+    font-family:"Montserrat", sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 10px;
+    position: absolute;
+    top: 320px;
+    left: 46%;
+    transition: 0.8s ease;
+}
+
+.content .btn:hover{
+    background: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.para{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 350px;
+   
+}
+
+.para .para2{
+    margin-top: 40px;
+    padding-right: 100px;
+}
+
+.pacoffee{
+    width: 100%;
+    height: 350px;
+    background: #f1f1f1;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.pacoffee .para3{
+    margin-top: 40px;
+    padding-left: 100px;
+}
+
+.palas{
+    background: #201e1e9a!important;
+    color: white;
+    padding: 64px;
+}
+
+.palas h2{
+    text-align: center;
+}

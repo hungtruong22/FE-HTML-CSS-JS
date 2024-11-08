@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --primary-nav-color: linear-gradient(to right, #4daf54, #3d8880);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+#app{
+    height: 100vh;
+    background: #dadada;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins'; 
+}
+
+.wrapper{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 300px;
+}
+
+.images{
+    width: 22%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;  
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.images:hover img{
+    transform: scale(1.2);
+}
+
+.gallery{
+    position: fixed;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transform: scaleX(0.8);
+    transition: 0.5s;
+}
+
+.gallery__inner{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.close{
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.control{
+    font-size: 35px;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+}
+
+.control.prev{
+    left: 15px;
+    cursor: pointer;
+}
+
+.control.next{
+    right: 15px;
+    cursor: pointer;
+}
+
+.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scaleX(1);
+}
+
+.hide{
+    display: none;
+}
+
+
+/* Search box*/
+
+.navbar{
+    background: var(--primary-nav-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.search-box{
+    position: relative;
+    top: 16px;
+    right: 24px;
+    background: #000;
+    width: 70px;
+    /* width: 400px; */
+    height: 70px;
+    overflow: hidden;
+    border-radius: 15px;
+    float: right;
+    transition: all 0.5s ease;
+}
+
+.search-box__input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    font-size: 32px;
+    padding: 20px 100px 20px 20px;
+    outline: none;
+}
+
+.search-box__btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-box.open{
+    width: 400px;
+}
+
+.search-tag{
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    padding: 20px; 
+}
+
+.search-tag__title{
+    font-size: 22px;
+}
+
+.search-tag__content{
+    border: 1px solid #888;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.list-items{
+    display: flex;
+}
+
+.item{
+    background: var(--primary-nav-color);
+    color: white;
+    border-radius: 4px;
+    list-style: none;
+    margin: 4px 3px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.item i{
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.item i:hover{
+    opacity: 0.5;
+}
+
+.item:hover{
+    transform: rotate(-10deg);  
+    background: blue;
+}
+
+
+.search-tag__content input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+.remove-all__btn{
+    background: var(--primary-nav-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.remove-all__btn:hover{
+    font-size: 20px;
+    background: blue;
+}

@@ -1,0 +1,143 @@
+/* Box Head */
+.box-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box-head .inner-title {
+    font-weight: 700;
+    color: #124265;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box-head .inner-desc {
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+/* End Box Head */
+
+/* Testimonials */
+.testimonials .inner-main {
+    background-color: #f3f9fd;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.testimonials .inner-main::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f3f9fd;
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 20px);
+}
+
+.testimonials .inner-content{
+    position: relative;
+    text-align: center;
+}
+
+.testimonials .inner-content::before{
+    content: "\f10d";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    color: #c9e3f5;
+    font-size: 20px;
+}
+
+.testimonials .inner-content::after{
+    content: "\f10e";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    color: #c9e3f5;
+    font-size: 20px;
+}
+
+.testimonials .inner-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.testimonials .inner-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials .inner-info .inner-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.testimonials .inner-info .inner-position {
+    color: #8a8a8a;
+    margin-bottom: 0;
+}
+
+/* End Testimonials */
+
+/* Contact Form */
+.contact{
+   margin-top: 80px; 
+}
+
+.contact .inner-info{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+}
+
+.contact .inner-info .inner-list .inner-item{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact .inner-info .inner-list .inner-item .inner-icon{
+    background: #eaf6ed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5cb874;
+    margin-right: 10px;
+}
+
+.contact .inner-info .inner-list .inner-item .inner-content{
+    flex: 1;
+}
+
+.contact .inner-info .inner-map{
+    width: 100%;
+    aspect-ratio: 16/9; /* Tỉ lẹ width / height */
+}
+
+.contact .inner-info .inner-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .inner-form{
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 100%;
+}
+/* End Contact Form */
